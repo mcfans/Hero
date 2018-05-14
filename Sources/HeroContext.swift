@@ -372,7 +372,7 @@ extension HeroContext {
     }
     return snapshots
   }
-  internal func loadViewAlpha(rootView: UIView) {
+  public static func loadViewAlpha(rootView: UIView) {
     if let storedAlpha = rootView.hero.storedAlpha {
       rootView.alpha = storedAlpha
       rootView.hero.storedAlpha = nil
